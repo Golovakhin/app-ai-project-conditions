@@ -1,0 +1,104 @@
+╭──────────────────── ✨ Update Available ✨ ─────────────────────╮
+│                                                                 │
+│  A new version of CrewAI is available!                          │
+│                                                                 │
+│  Current version: 1.15.22                                       │
+│  Latest version:  1.15.23                                       │
+│                                                                 │
+│  To update, run: uv sync --upgrade-package crewai               │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+╭─────────────────── 🚀 Crew Execution Started ───────────────────╮
+│                                                                 │
+│  Crew Execution Started                                         │
+│  Name: crew                                                     │
+│  ID: 86b4bb9a-f138-4a64-8146-d3fb0e77d85d                       │
+│                                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────── 📋 Task Started ────────────────────────╮
+│                                                                 │
+│  Task Started                                                   │
+│  Name: Проверь с помощью math_condition, является ли число 42   │
+│  чётным. Передай value=42 и condition='even'.                   │
+│  ID: 3112acd8-578d-4f8f-9409-6bbbba1ed933                       │
+│                                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────── 🤖 Agent Started ────────────────────────╮
+│                                                                 │
+│  Agent: Помощник по проверке математических условий             │
+│                                                                 │
+│  Task: Проверь с помощью math_condition, является ли число 42   │
+│  чётным. Передай value=42 и condition='even'.                   │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+╭──────────────── 🔧 Tool Execution Started (#1) ─────────────────╮
+│                                                                 │
+│  Tool: math_condition                                           │
+│  Args: {'value': 42, 'condition': 'even'}                       │
+│                                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+[32mTool math_condition executed with result: {"status": "ok", "value": 42.0, "condition": "even", "result": true}...[0m
+
+╭─────────────── ✅ Tool Execution Completed (#1) ────────────────╮
+│                                                                 │
+│  Tool Completed                                                 │
+│  Tool: math_condition                                           │
+│  Output: {"status": "ok", "value": 42.0, "condition": "even",   │
+│  "result": true}                                                │
+│                                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+╭───────────────────── ✅ Agent Final Answer ─────────────────────╮
+│                                                                 │
+│  Agent: Помощник по проверке математических условий             │
+│                                                                 │
+│  Final Answer:                                                  │
+│  Число 42 является чётным.                                      │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+╭────────────────────── 📋 Task Completion ───────────────────────╮
+│                                                                 │
+│  Task Completed                                                 │
+│  Name: Проверь с помощью math_condition, является ли число 42   │
+│  чётным. Передай value=42 и condition='even'.                   │
+│  Agent: Помощник по проверке математических условий             │
+│                                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────── Crew Completion ────────────────────────╮
+│                                                                 │
+│  Crew Execution Completed                                       │
+│  Name: crew                                                     │
+│  ID: 86b4bb9a-f138-4a64-8146-d3fb0e77d85d                       │
+│  Final Output: Число 42 является чётным.                        │
+│                                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+
+
+
+╭─────────────────────── Execution Traces ────────────────────────╮
+│                                                                 │
+│  🔍 Detailed execution traces are available!                    │
+│                                                                 │
+│  View insights including:                                       │
+│    • Agent decision-making process                              │
+│    • Task execution flow and timing                             │
+│    • Tool usage details                                         │
+│                                                                 │
+│  These traces are stored locally and may contain prompts,       │
+│  inputs, and outputs. Sharing uploads them to CrewAI.           │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+Share this execution trace with CrewAI? [y/N] (20s timeout): Число 42 является чётным.
